@@ -1,0 +1,7 @@
+Monredis -- monitor redis status by sentinel channel, and send information to
+haproxy:
+1.if slave down, haproxy slave server status is down
+2.if slave re-online, haproxy slave server status is online
+3.if switch-master, haproxy down current master, and up new master.
+
+This HA case:  master can read/write only!
